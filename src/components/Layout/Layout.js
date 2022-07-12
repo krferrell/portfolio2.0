@@ -1,11 +1,11 @@
 import React from "react";
 import { Curve, MainSection, Section } from "./styles";
 
-const Layout = () => {
+const Layout = ({ Home }) => {
   return (
     <MainSection>
       <Section>
-        <Curve />
+        <Curve>{Home}</Curve>
       </Section>
       <Section>
         <Curve />
