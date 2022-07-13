@@ -1,22 +1,25 @@
 import React from "react";
 import {
   AboutMeCurve,
-  AboutMeStyles,
+  AboutMeSection,
   Curve,
   MainSection,
   Section,
+  SkillsCurve,
+  SkillsSection,
 } from "./styles";
 
-const Layout = ({ AboutMe }) => {
+const Layout = ({ AboutMe, Skills }) => {
   return (
     <MainSection>
-      <AboutMeStyles>
+      <AboutMeSection>
         <AboutMeCurve />
         {AboutMe}
-      </AboutMeStyles>
-      <Section>
-        <Curve />
-      </Section>
+      </AboutMeSection>
+      <SkillsSection>
+        <SkillsCurve />
+        {Skills}
+      </SkillsSection>
       <Section>
         <Curve />
       </Section>
