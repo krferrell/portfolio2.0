@@ -1,12 +1,19 @@
 import React from "react";
-import { Curve, MainSection, Section } from "./styles";
+import {
+  AboutMeCurve,
+  AboutMeStyles,
+  Curve,
+  MainSection,
+  Section,
+} from "./styles";
 
-const Layout = ({ Home }) => {
+const Layout = ({ AboutMe }) => {
   return (
     <MainSection>
-      <Section>
-        <Curve>{Home}</Curve>
-      </Section>
+      <AboutMeStyles>
+        <AboutMeCurve />
+        {AboutMe}
+      </AboutMeStyles>
       <Section>
         <Curve />
       </Section>
