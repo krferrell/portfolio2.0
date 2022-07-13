@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home, Layout } from "./components";
+import { AboutMe, Home, Layout } from "./components";
 import logo from "./utils/logo.svg";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <img src={logo} className="logo" alt="K F II" />
       <Home />
-      <Layout />
+      <Layout AboutMe={<AboutMe />} />
     </div>
   );
 }

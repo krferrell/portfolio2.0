@@ -1,4 +1,5 @@
-import Layout from "./Layout/Layout";
+import AboutMe from "./AboutMe/AboutMe";
 import Home from "./Home/Home";
+import Layout from "./Layout/Layout";
 
-export { Home, Layout };
+export { AboutMe, Home, Layout };
