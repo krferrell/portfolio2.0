@@ -16,6 +16,10 @@ const AboutMeCurve = styled.div`
   background-color: #474b4f;
   ${curveStyles}
 `;
+const ContactCurve = styled.div`
+  background-color: #474b4f;
+  ${curveStyles}
+`;
 const SkillsCurve = styled.div`
   background-color: #61892f;
   ${curveStyles}
@@ -26,6 +30,11 @@ const WorksCurve = styled.div`
 `;
 
 const AboutMeSection = styled.div`
+  background-color: #474b4f;
+  width: 100%;
+  position: relative;
+`;
+const ContactSection = styled.div`
   background-color: #474b4f;
   width: 100%;
   position: relative;
@@ -51,6 +60,8 @@ const MainSection = styled.div`
 export {
   AboutMeCurve,
   AboutMeSection,
+  ContactCurve,
+  ContactSection,
   MainSection,
   SkillsCurve,
   SkillsSection,

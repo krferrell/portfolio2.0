@@ -12,6 +12,7 @@ const MainContainer = styled.div`
   top: 5%;
   position: relative;
   margin-top: 5vh;
+  padding-bottom: 20vh;
 `;
 
 const LeftColumn = styled.div`
