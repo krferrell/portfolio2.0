@@ -1,5 +1,5 @@
 import "./App.css";
-import { AboutMe, Home, Layout, Skills, Works } from "./components";
+import { AboutMe, Contact, Home, Layout, Skills, Works } from "./components";
 import logo from "./utils/logo.svg";
 
 function App() {
@@ -7,7 +7,12 @@ function App() {
     <div className="App">
       <img src={logo} className="logo" alt="K F II" />
       <Home />
-      <Layout AboutMe={<AboutMe />} Skills={<Skills />} Works={<Works />} />
+      <Layout
+        AboutMe={<AboutMe />}
+        Contact={<Contact />}
+        Skills={<Skills />}
+        Works={<Works />}
+      />
     </div>
   );
 }

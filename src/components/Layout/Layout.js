@@ -2,6 +2,8 @@ import React from "react";
 import {
   AboutMeCurve,
   AboutMeSection,
+  ContactCurve,
+  ContactSection,
   MainSection,
   SkillsCurve,
   SkillsSection,
@@ -9,7 +11,7 @@ import {
   WorksSection,
 } from "./styles";
 
-const Layout = ({ AboutMe, Skills, Works }) => {
+const Layout = ({ AboutMe, Contact, Skills, Works }) => {
   return (
     <MainSection>
       <AboutMeSection>
@@ -24,6 +26,10 @@ const Layout = ({ AboutMe, Skills, Works }) => {
         <WorksCurve />
         {Works}
       </WorksSection>
+      <ContactSection>
+        <ContactCurve />
+        {Contact}
+      </ContactSection>
     </MainSection>
   );
 };
