@@ -2,14 +2,14 @@ import React from "react";
 import {
   AboutMeCurve,
   AboutMeSection,
-  Curve,
   MainSection,
-  Section,
   SkillsCurve,
   SkillsSection,
+  WorksCurve,
+  WorksSection,
 } from "./styles";
 
-const Layout = ({ AboutMe, Skills }) => {
+const Layout = ({ AboutMe, Skills, Works }) => {
   return (
     <MainSection>
       <AboutMeSection>
@@ -20,9 +20,10 @@ const Layout = ({ AboutMe, Skills }) => {
         <SkillsCurve />
         {Skills}
       </SkillsSection>
-      <Section>
-        <Curve />
-      </Section>
+      <WorksSection>
+        <WorksCurve />
+        {Works}
+      </WorksSection>
     </MainSection>
   );
 };
