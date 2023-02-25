@@ -1,10 +1,21 @@
-import "./App.css";
+import './App.css';
+import { About, Contact, Home, Work } from './components';
+
+import Navigation from './components/Navigation';
+import { useState } from 'react';
+import { StyledLayout } from './styles';
 
 function App() {
-  return (
-    <div className="App">
+  const [contentLoaded, setContentLoaded] = useState('home');
 
-    </div>
+  return (
+    <StyledLayout>
+      <Navigation setContentLoaded={setContentLoaded} />
+      {contentLoaded === 'home' && <Home />}
+      {contentLoaded === 'about' && <About />}
+      {contentLoaded === 'work' && <Work />}
+      {contentLoaded === 'contact' && <Contact />}
+    </StyledLayout>
   );
 }
 
